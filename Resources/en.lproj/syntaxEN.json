@@ -1,0 +1,641 @@
+{
+	"_method_": {},
+	"cs.fm": {
+		"FM": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"FMRespondParameters": {
+			"new()": {
+				"Syntax": "**.new**( *object* : Object )",
+				"Params": [
+					[
+						"object",
+						"Object",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"FMParameters": {
+			"new()": {
+				"Syntax": "**.new**( *object* : Object )",
+				"Params": [
+					[
+						"object",
+						"Object",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"FMTokenCountParameters": {
+			"new()": {
+				"Syntax": "**.new**( *object* : Object )",
+				"Params": [
+					[
+						"object",
+						"Object",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"FMSchemaParameters": {
+			"new()": {
+				"Syntax": "**.new**( *object* : Object )",
+				"Params": [
+					[
+						"object",
+						"Object",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"_FMAsyncOptions": {
+			"new()": {
+				"Syntax": "**.new**( *parameters* : cs.fm.FMParameters; *resultClass* : 4D.Class; *result* : cs.fm.FMResult )",
+				"Params": [
+					[
+						"parameters",
+						"cs.fm.FMParameters",
+						"->"
+					],
+					[
+						"resultClass",
+						"4D.Class",
+						"->"
+					],
+					[
+						"result",
+						"cs.fm.FMResult",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"FMServeParameters": {
+			"new()": {
+				"Syntax": "**.new**( *object* : Object )",
+				"Params": [
+					[
+						"object",
+						"Object",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"FMError": {
+			"new()": {
+				"Syntax": "**.new**( *exitCode* : Integer; *message* : Text; *command* : Text )",
+				"Params": [
+					[
+						"exitCode",
+						"Integer",
+						"->"
+					],
+					[
+						"message",
+						"Text",
+						"->"
+					],
+					[
+						"command",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		}
+	},
+	"FM": {
+		"installed()": {
+			"Syntax": "**.installed**() : Boolean",
+			"Params": [
+				[
+					"",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"quotaUsage()": {
+			"Syntax": "**.quotaUsage**( *model* : Text ) : cs.fm.FMQuotaUsageResult",
+			"Params": [
+				[
+					"model",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"cs.fm.FMQuotaUsageResult",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"tokenCount()": {
+			"Syntax": "**.tokenCount**( *prompt* : Text; *parameters* : Object ) : Integer",
+			"Params": [
+				[
+					"prompt",
+					"Text",
+					"->"
+				],
+				[
+					"parameters",
+					"Object",
+					"->"
+				],
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"available()": {
+			"Syntax": "**.available**( *model* : Text ) : cs.fm.FMAvailableResult",
+			"Params": [
+				[
+					"model",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"cs.fm.FMAvailableResult",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"serve()": {
+			"Syntax": "**.serve**( *parameters* : Object ) : cs.fm.FMResult",
+			"Params": [
+				[
+					"parameters",
+					"Object",
+					"->"
+				],
+				[
+					"",
+					"cs.fm.FMResult",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"schema()": {
+			"Syntax": "**.schema**( *parameters* : Object ) : Object",
+			"Params": [
+				[
+					"parameters",
+					"Object",
+					"->"
+				],
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"respond()": {
+			"Syntax": "**.respond**( *prompt* : Text; *parameters* : Object ) : Variant",
+			"Params": [
+				[
+					"prompt",
+					"Text",
+					"->"
+				],
+				[
+					"parameters",
+					"Object",
+					"->"
+				],
+				[
+					"",
+					"Variant",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"defaultModel": {
+			"Syntax": "defaultModel : Text"
+		},
+		"executable": {
+			"Syntax": "executable : Text"
+		}
+	},
+	"FMRespondParameters": {
+		"args()": {
+			"Syntax": "**.args**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"useCase": {
+			"Syntax": "useCase : Text"
+		},
+		"greedy": {
+			"Syntax": "greedy : Boolean"
+		},
+		"stream": {
+			"Syntax": "stream : Boolean"
+		},
+		"guardrails": {
+			"Syntax": "guardrails : Text"
+		},
+		"text": {
+			"Syntax": "text : Collection"
+		},
+		"schemaFile": {
+			"Syntax": "schemaFile : Text"
+		},
+		"loadTranscript": {
+			"Syntax": "loadTranscript : Text"
+		},
+		"image": {
+			"Syntax": "image : Collection"
+		},
+		"verbose": {
+			"Syntax": "verbose : Boolean"
+		},
+		"saveTranscript": {
+			"Syntax": "saveTranscript : Text"
+		},
+		"instructions": {
+			"Syntax": "instructions : Text"
+		},
+		"_inheritedFrom_": "FMParameters"
+	},
+	"FMParameters": {
+		"args()": {
+			"Syntax": "**.args**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"model": {
+			"Syntax": "model : Text"
+		},
+		"timeout": {
+			"Syntax": "timeout : Real"
+		},
+		"throw": {
+			"Syntax": "throw : Boolean"
+		},
+		"formula": {
+			"Syntax": "formula : 4D.Function"
+		},
+		"onError": {
+			"Syntax": "onError : 4D.Function"
+		},
+		"onData": {
+			"Syntax": "onData : 4D.Function"
+		},
+		"onResponse": {
+			"Syntax": "onResponse : 4D.Function"
+		},
+		"onTerminate": {
+			"Syntax": "onTerminate : 4D.Function"
+		}
+	},
+	"FMTokenCountParameters": {
+		"args()": {
+			"Syntax": "**.args**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"text": {
+			"Syntax": "text : Collection"
+		},
+		"loadTranscript": {
+			"Syntax": "loadTranscript : Text"
+		},
+		"image": {
+			"Syntax": "image : Collection"
+		},
+		"instructions": {
+			"Syntax": "instructions : Text"
+		},
+		"_inheritedFrom_": "FMParameters"
+	},
+	"FMAvailableResult": {
+		"get available()": {
+			"Syntax": "**.get available**() : Boolean",
+			"Params": [
+				[
+					"",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "FMResult"
+	},
+	"FMResult": {
+		"throw()": {
+			"Syntax": "**.throw**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"get text()": {
+			"Syntax": "**.get text**() : Text",
+			"Params": [
+				[
+					"",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get success()": {
+			"Syntax": "**.get success**() : Boolean",
+			"Params": [
+				[
+					"",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get exitCode()": {
+			"Syntax": "**.get exitCode**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get errors()": {
+			"Syntax": "**.get errors**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get errorText()": {
+			"Syntax": "**.get errorText**() : Text",
+			"Params": [
+				[
+					"",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get terminated()": {
+			"Syntax": "**.get terminated**() : Boolean",
+			"Params": [
+				[
+					"",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"command": {
+			"Syntax": "command : Text"
+		},
+		"worker": {
+			"Syntax": "worker : 4D.SystemWorker"
+		}
+	},
+	"FMRespondResult": {
+		"_inheritedFrom_": "FMResult"
+	},
+	"FMSchemaResult": {
+		"get schema()": {
+			"Syntax": "**.get schema**() : Object",
+			"Params": [
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "FMResult"
+	},
+	"FMTokenCountResult": {
+		"get count()": {
+			"Syntax": "**.get count**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "FMResult"
+	},
+	"FMSchemaParameters": {
+		"args()": {
+			"Syntax": "**.args**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"properties": {
+			"Syntax": "properties : Collection"
+		},
+		"name": {
+			"Syntax": "name : Text"
+		},
+		"_inheritedFrom_": "FMParameters"
+	},
+	"_FMAsyncOptions": {
+		"onDataError()": {
+			"Syntax": "**.onDataError**( *worker* : 4D.SystemWorker; *info* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"info",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onError()": {
+			"Syntax": "**.onError**( *worker* : 4D.SystemWorker; *info* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"info",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onTerminate()": {
+			"Syntax": "**.onTerminate**( *worker* : 4D.SystemWorker; *info* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"info",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onResponse()": {
+			"Syntax": "**.onResponse**( *worker* : 4D.SystemWorker; *info* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"info",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onData()": {
+			"Syntax": "**.onData**( *worker* : 4D.SystemWorker; *info* : Object )",
+			"Params": [
+				[
+					"worker",
+					"4D.SystemWorker",
+					"->"
+				],
+				[
+					"info",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"timeout": {
+			"Syntax": "timeout : Integer"
+		},
+		"dataType": {
+			"Syntax": "dataType : Text"
+		}
+	},
+	"FMServeParameters": {
+		"args()": {
+			"Syntax": "**.args**() : Collection",
+			"Params": [
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"socket": {
+			"Syntax": "socket : Text"
+		},
+		"port": {
+			"Syntax": "port : Integer"
+		},
+		"host": {
+			"Syntax": "host : Text"
+		},
+		"_inheritedFrom_": "FMParameters"
+	},
+	"FMError": {
+		"exitCode": {
+			"Syntax": "exitCode : Integer"
+		},
+		"message": {
+			"Syntax": "message : Text"
+		},
+		"command": {
+			"Syntax": "command : Text"
+		},
+		"errCode": {
+			"Syntax": "errCode : Integer"
+		}
+	},
+	"FMQuotaUsageResult": {
+		"get usage()": {
+			"Syntax": "**.get usage**() : Object",
+			"Params": [
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "FMResult"
+	}
+}
